@@ -1,7 +1,7 @@
 function handleSubmit(e){
     e.preventDefault();
 
-    const text = document.getElementById('input-text').value;
+    const text = document.getElementById('input-text').value.trim();
     if(text === '') return alert('Por favor, ingrese un texto válido :)');
 
     const words = text.split(' ').length;
